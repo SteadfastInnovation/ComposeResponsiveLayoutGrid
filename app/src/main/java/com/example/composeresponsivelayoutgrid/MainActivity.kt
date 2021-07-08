@@ -17,7 +17,7 @@ class MainActivity : ComponentActivity() {
             ComposeResponsiveLayoutGridTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(color = MaterialTheme.colors.background) {
-                    ResponsiveBox() { dimensions ->
+                    ResponsiveBox() { dimensions, _ ->
                         Row(Modifier.fillMaxSize()) {
                             // Left Margin
                             Spacer(
